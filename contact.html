@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Travel The World</title>
+    <link rel="stylesheet" href="contact.css">
+    <script defer src="contact.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🌍 Travel The World</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <section class="hero-small">
+        <h1>Contact Us</h1>
+    </section>
+
+    <section class="contact">
+        <div class="contact-form">
+            <h2>Get In Touch</h2>
+            <form id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="5" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Travel The World. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

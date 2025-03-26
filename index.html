@@ -1,33 +1,115 @@
-<!DOCTYPE html>
-<html>
+<<!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <title>HTML Login Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Explore The World</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+    </head>
 
-<body>
+    <body>
 
-    <div class="main">
-        <h1>Welcome</h1>
-        <h3>Enter your login credentials</h3>
+        <header>
+            <nav>
+                <a href="index.html" class="logo">🌍 Travel The World with US!</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            </nav>
+        </header>
 
-        <form action="">
-            <label for="first">Username:</label>
-            <input type="text" id="first" name="first" placeholder="Enter your Username" required>
+        <section class="hero">
+            <h1>Discover Beautiful Places</h1>
+            <p>Adventure awaits. Let's explore the world together.</p>
+            <a href="destinations.html" class="btn">Start Your Journey</a>
+        </section>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+        <section class="about">
+            <h2><b>About Us</b></h2>
+            <p>Your wanderlust and embark on an extraordinary journey with us! We curate exclusive, tailor-made
+                travel experiences, guiding you to breathtaking destinations with opulent stays and thrilling
+                adventures. Picture yourself strolling through ancient cities, basking in the golden hues of exotic
+                beaches, or indulging in world-class cuisine. From majestic mountain escapes to vibrant urban
+                explorations, every journey is crafted with elegance and excitement. Whether you seek tranquility or
+                adventure, we promise seamless planning, expert guidance, and memories that last a lifetime.
+                Let’s turn your travel dreams into reality—because the world is waiting for you to explore!</p>
+        </section>
 
-            <div class="wrap">
-                <button type="submit">Submit</button>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <div class="service">
+                    <h3><b>Customized Packages</b></h3>
+                    <p>Tailor-made trips to suit your travel style.</p>
+                </div>
+                <div class="service">
+                    <h3><b>Hotel & Flight Booking</b></h3>
+                    <p>Seamless booking for stress-free travels.</p>
+                </div>
+                <div class="service">
+                    <h3><b>Guided Tours</b></h3>
+                    <p>Expert-guided tours for an enriched experience.</p>
+                </div>
+                <div class="service">
+                    <h3>24/7 Support</h3>
+                    <p>Assistance whenever you need it.</p>
+                </div>
             </div>
-        </form>
+        </section>
 
-        <p>Not registered? 
-            <a href="#" style="text-decoration: none;">Create an account</a>
-        </p>
-    </div>
+        <footer>
+            <p>&copy; 2025 Travel The World. All rights reserved.</p>
+        </footer>
 
-</body>
-</html>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background: url("photos/background.jpg") no-repeat center center fixed;
+                background-size: cover;
+                color: #ddd;
+            }
+
+            .hero {
+                text-align: center;
+                padding: 60px;
+                background: rgba(0, 0, 0, 0.7);
+                animation: fadeIn 2s ease-in-out;
+            }
+
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            .service {
+                text-align: center;
+                padding: 20px;
+                background: rgba(36, 104, 146, 0.795);
+                border-radius: 10px;
+                margin: 15px;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .service:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 20px rgba(45, 48, 49, 0.557);
+            }
+        </style>
+
+    </body>
+
+    </html>
