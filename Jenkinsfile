@@ -2,12 +2,11 @@ pipeline {
     agent any
 
     stages {
-
         stage('Setup Python Environment') {
             steps {
-                sh '''
-                python3 -m venv venv
-                source venv/bin/activate
+                bat '''
+                python -m venv venv
+                call venv\\Scripts\\activate
                 pip install pandas pytest
                 '''
             }
@@ -15,8 +14,8 @@ pipeline {
 
         stage('AI Test Prioritization') {
             steps {
-                sh '''
-                source venv/bin/activate
+                bat '''
+                call venv\\Scripts\\activate
                 python ai_prioritize.py
                 '''
             }
@@ -24,8 +23,8 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh '''
-                source venv/bin/activate
+                bat '''
+                call venv\\Scripts\\activate
                 pytest tests/
                 '''
             }
